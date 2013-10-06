@@ -55,6 +55,8 @@ function! ref#R#define()
     return copy(s:source)
 endfunction
 
+" filetype 'r' uses this source
+call ref#register_detection('r', 'R')
 
 " utility functions
 " adapted from similar function in ftplugin/rdoc.vim in Vim-R-plugin.
