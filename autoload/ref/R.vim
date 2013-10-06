@@ -28,6 +28,8 @@ function! s:source.opened(query)
     call s:FixRdoc()
     call s:syntax()
     setl nolist
+    " avoid folding of examples
+    setl foldlevel=99
 endfunction
 
 " optional pick keyword from current cursos pos (default is expand('<cword>'))
